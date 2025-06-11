@@ -4,94 +4,39 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Composer](https://img.shields.io/badge/Autoload-PSR--4-orange)](https://getcomposer.org/doc/04-schema.md#autoload)
 
----
 
-## 🇧🇷 Português
+Integrantes da Equipe: 
 
-Projeto base em PHP 8+ para uso em atividades da disciplina de **POO — Programação Orientada a Objetos**.  
-Ideal para estudantes dos cursos de **Análise e Desenvolvimento de Sistemas**, **Ciência da Computação** e **Engenharia de Software**.  
-Utiliza Composer e Autoload PSR-4 para ensinar boas práticas de organização e estruturação de código orientado a objetos.
-
-### ✅ Estrutura
-```
-php-poo-skeleton/
-├── composer.json
-├── .gitignore
-├── README.md
-├── src/
-│   └── Model/
-│       └── Example.php
-└── app.php
-```
-
-### 🚀 Como Usar
-
-1. Clone o projeto:
-
-```
-git clone https://github.com/angelomesquita/php-poo-skeleton.git
-cd php-poo-skeleton
-```
-2. Instalação
-```
-composer install
-composer dump-autoload
-```
-
-3. Execute o arquivo `app.php`
-```
-php app.php
-```
-4. Você verá:
-```
-Hi, OOP World in PHP!
-```
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Leonardo de Souza Santiago
+Rafaela Seterio Silva
+Giovanna Katherine
+Wendles Miranda
 
 
-## 🇺🇸 English
 
-This is a PHP 8+ skeleton project designed for Object-Oriented Programming (OOP) classes.
-It serves as a base for practical exercises in Systems Analysis and Development, Computer Science, and Software Engineering courses.
-Composer and PSR-4 Autoload are used to teach best practices in modern PHP application development.
+Módulos implementados:
 
-### ✅ Structure
-```
-php-poo-skeleton/
-├── composer.json
-├── .gitignore
-├── README.md
-├── src/
-│   └── Model/
-│       └── Example.php
-└── app.php
-```
+Módulo 1: Convite e Cadastro de Alunos
+Módulo 2: Seleção de Casas
+Módulo 3: Gerenciamento de Torneios e Competições
+Módulo 4: Controle Acadêmico e Disciplinar
+Módulo 5: Gerenciamento de Professores e Funcionários
+Módulo 6: Sistema de Alertas e Comunicação
 
-### 🚀 How to use
+Instruções de execução:
 
-1. Clone the project:
+1- git clone https://github.com/RafaSeterio/gestao_hogwarts.git
+cd gestao_hogwarts
 
-```
-git clone https://github.com/angelomesquita/php-poo-skeleton.git
-cd php-poo-skeleton
-```
-2. Install Composer autoloader
-```
-composer install
-composer dump-autoload
-```
+2- Instale com composer
+ composer install
+ 
+ 3- Execute os testes dos módulos pelo terminal:
 
-3. Run the file `app.php`
-```
-php app.php
-```
-4. You will see:
-```
-Hi, OOP World in PHP!
-```
+php cli/testes.php
+
+
+
 ## License
 
 This project is licensed under the MIT License—see the [LICENSE](LICENSE) file for details.
