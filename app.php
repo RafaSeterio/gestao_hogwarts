@@ -1,10 +1,17 @@
-<?php
+use Models\Professor;
+use Models\Disciplina;
+use Models\Turma;
+use Models\Cronograma;
 
-declare(strict_types=1);
+$prof = new Professor(1, "Minerva McGonagall", "minerva@hogwarts.edu");
 
-require_once __DIR__ . '/vendor/autoload.php';
+$disciplina = new Disciplina(1, "Transfiguração", "Transformações mágicas");
+$turma = new Turma(1, "Grifinória 1º ano", "2025");
 
-use App\Model\Example;
+$cronograma = new Cronograma("Segunda-feira", "09:00", $turma, $disciplina);
 
-$test = new Example();
-echo $test->sayHello();
+$prof->adicionarDisciplina($disciplina);
+$prof->adicionarTurma($turma);
+$prof->adicionarCronograma($cronograma);
+
+print_r($prof->getCronograma());
