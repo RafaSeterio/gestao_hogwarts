@@ -6,6 +6,12 @@ use Models\Cronograma;
 
 require 'vendor/autoload.php';
 
+
+use App\Model\Aluno\Aluno;
+
+$test = new Aluno();
+echo $test->sayHello();
+=======
 use App\Model\Alunos\Aluno;
 use App\Model\Chapeu\ChapeuSeletor;
 use App\Model\Relatorios\DistribuicaoDeCasas;
@@ -40,4 +46,5 @@ $prof->adicionarTurma($turma);
 $prof->adicionarCronograma($cronograma);
 
 print_r($prof->getCronograma());
+
 
