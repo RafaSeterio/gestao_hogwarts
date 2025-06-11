@@ -1,10 +1,25 @@
 <?php
 
-declare(strict_types=1);
+require 'vendor/autoload.php';
 
-require_once __DIR__ . '/vendor/autoload.php';
+use App\Model\Alunos\Aluno;
+use App\Model\Chapeu\ChapeuSeletor;
+use App\Model\Relatorios\DistribuicaoDeCasas;
 
-use App\Model\Example;
+$alunos = [
+    new Aluno('Harry Potter', 'Corajoso, impulsivo'),
+    new Aluno('Draco Malfoy', 'Ambicioso, esperto'),
+    new Aluno('Luna Lovegood', 'Criativa, inteligente'),
+    new Aluno('Cedrico Diggory', 'Leal, justo'),
+];
 
-$test = new Example();
-echo $test->sayHello();
+$chapeu = new ChapeuSeletor();
+
+foreach ($alunos as $aluno) {
+    $chapeu->selecionarCasa($aluno);
+    echo "{$aluno->getNome()} foi selecionado para a casa {$aluno->getCasa()}\n";
+}
+
+echo "\nDistribuição por casa:\n";
+$distribuicao = DistribuicaoDeCasas::gerar($alunos);
+print_r($distribuicao);
