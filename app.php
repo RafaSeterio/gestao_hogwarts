@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use App\Model\Example;
+use App\Model\Aluno\Aluno;
 
-$test = new Example();
+$test = new Aluno();
 echo $test->sayHello();
